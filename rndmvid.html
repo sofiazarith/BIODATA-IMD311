@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Variety Show form K-Idol</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="biodata.html">BIODATA</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="family.html">FAMILY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="">RANDOM VIDEO</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+        <div class="container">
+            <h1>THIS IS MY COLLECTION VIDEO</h1>
+            <marquee behaviour="slide"><p>Note for u guys, please click pause if you guys do not watch this video till the end, cause the sound will probably play until the video end and lastly please anjoy this video.</p></marquee>
+            <div class="row">
+                <div class="col">
+                    <div class="feature-img">
+                        <img src="images/4328.jpg" width="100%">
+                        <img src="images/play.png" class="play-btn" onclick="playVideo('Video/video6087083335589301047.mp4')">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="images/5855.jpg" height="150" hspace="20" vspace="20">
+                            <img src="images/play.png" class="play-btn" onclick="playVideo('Video/video6087083335589301062.mp4')">
+                            </div>
+                            <p>This is my best friends.</p>
+                        </div>
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="images/hameed-ullah-eeI0al-Qx8k-unsplash.jpg" height="150" hspace="20" vspace="20">
+                                <img src="images/play.png" class="play-btn" onclick="playVideo('Video/video6087083335589301071.mp4')">
+                                </div>
+                                <p>This is selawat that recite by Gus Azmi and his friends<br>please enjoy this selawat!</p>
+                            </div>
+                            <div class="small-img-row">
+                                <div class="small-img">
+                                    <img src="images/nonton-streaming-download-drakorindo-the-best-of-running-man-sub-indo-viu-slide-banner.jpg" height="150" hspace="20" vspace="20">
+                                    <img src="images/play.png" class="play-btn" onclick="playVideo('Video/video6087083335589301059.mp4')">
+                                    </div>
+                                    <p>This is random video from Running man<br>hopefully it can make you guys laugh<br>please enjoy this video!</p>
+                                </div>
+                                <div class="small-img-row">
+                                    <div class="small-img">
+                                        <img src="images/3672.jpg" height="150" hspace="20" vspace="20">
+                                        <img src="images/play.png" class="play-btn" onclick="playVideo('Video/video6087083335589301061.mp4')">
+                                        </div>
+                                        <p>This is my friends.</p>
+                                    </div>
+                    </div>
+                </div>
+        </div>
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src="Video/video6087083335589301047.mp4" type="video/mp4">
+            </video>
+            <img src="images/icons8-close-window-16.png" class="close-btn" onclick="stopVideo()">
+        </div>
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src="Video/video6087083335589301062.mp4" type="video/mp4">
+            </video>
+            <img src="images/icons8-close-window-16.png" class="close-btn" onclick="stopVideo()">
+        </div>
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src="Video/video6087083335589301071.mp4" type="video/mp4">
+            </video>
+            <img src="images/icons8-close-window-16.png" class="close-btn" onclick="stopVideo()">
+        </div>
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src="Video/video6087083335589301059.mp4" type="video/mp4">
+            </video>
+            <img src="images/icons8-close-window-16.png" class="close-btn" onclick="stopVideo()">
+        </div>
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src="Video/video6087083335589301061.mp4" type="video/mp4">
+            </video>
+            <img src="images/icons8-close-window-16.png" class="close-btn" onclick="stopVideo()">
+        </div>
+
+
+
+<script>
+    var videoPlayer = document.getElementById("videoPlayer");
+    var myVideo = document.getElementById("myVideo");
+
+    function stopVideo(){
+
+        videoPlayer.style.display = "none";
+    }
+
+    function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+    }
+
+</script>
+
+
+
+    </body>
+</html>

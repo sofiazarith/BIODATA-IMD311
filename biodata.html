@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MY BIODATA</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,600;0,700;1,300;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">      
+    </head>
+    <body>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">BIODATA</a></li>
+                    <li><a href="education.html">EDUCATION</a></li>
+                    <li><a href="family.html">FAMILY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="rndmvid.html">RANDOM VIDEO</a></li>
+                    <li><a href="contact.html">CONTACTS</a></li>
+                </ul>
+            </div>
+        </nav>
+
+<!----- Biodata ------->
+
+<section class="Biodata">
+        <div class="text-boxs">
+            <h1>
+                <marquee behaviour="slide">ALOHOMORA!!! WELCOME TO NURUL ZARITH SOFIA WEBSITE</marquee>
+            </h1>
+        </div>
+        <div class="row"> 
+            <div class="biodata-col">
+                <div id="paral" align="justify">
+            <h2 align="center"><i>MY SELF</i></h2>
+            <P><u><i>Full name:</u></i>Nurul Zarith Sofia binti Mohd Zain<br><u><i>
+            Age:</u></i> 21 Years Old<br><u><i>Place of Birth:</u></i> <a href="images/Hospital-Pakar-Sultanah-Fatimah-1.png" class="hero-btn">Hospital Pakar Sultanah Fatimah Muar Johor</a>
+            <br><u><i>Date of Birth:</u></i> 12 July 2002<br><u><i>Adress:</u></i> No. 8, Jalan Suria 1A/13, Bandar Mahkota 42700, Banting, Selangor.<br><u><i>Hobby:</u></i> I like to <a href="books.html" class="hero-btn">reading novels</a>, <a href="video.html" class="hero-btn">watching variety show</a> and listening music.</a>
+            <br><u><i>Ambition:</u></i> I want to be a successful librarian whom can help many people in retrieving information and I also want to be a successful child to my parents.
+            <br><u>Favourite Food:</u> Char Kuew Teow<br><u>Favourite Drink:</u> Orange Juice<br><u>Favourite Colour:</u> Purple<br>
+            <u><i>Favourite Movie Genre:</u></i> Action, Animation, Thriller & Mistery</P>
+            </div>
+            </div>
+            <!--Inserting image-->
+            <div class="biodata-col">
+                <h2 align="center"><i>My Image<br>@Zarith Sofia</i></h2>
+                <div align="center">
+                <img src="images/9050.jpg" height="250" hspace="10" vspace="10" border="5"><br><img src="Video/3vIF.gif" length="65" width="65" align="right">  
+                </div>
+            </div>
+            <div class="biodata-col">
+                <h2 align="center"><i>My Random Video</i></h2>
+                <div align="center">
+
+                    <div class="small-img-rows">
+                        <div class="small-img">
+                            <img src="images/e104d6d17cd0654adaeb04e9f567d4dc.jpg" height="150" hspace="20" vspace="20">
+                            <img src="images/play.png" class="play-btn" onclick="playVideo('Video/video6082540849328032751.mp4')">
+                            </div>
+                            <p>This is my random video with my friend</p>
+                        </div>
+
+                        <div class="video-player" id="videoPlayer">
+                            <video width="100%" controls autoplay id="myVideo">
+                                <source src="Video/video6082540849328032751.mp4" type="video/mp4">
+                            </video>
+                            <img src="images/icons8-close-window-16.png" class="close-btn" onclick="stopVideo()">
+                        </div>
+
+                        <script>
+                            var videoPlayer = document.getElementById("videoPlayer");
+                            var myVideo = document.getElementById("myVideo");
+                        
+                            function stopVideo(){
+                        
+                                videoPlayer.style.display = "none";
+                            }
+                        
+                            function playVideo(file){
+                                myVideo.src = file;
+                                videoPlayer.style.display = "block";
+                            }
+                        
+                        </script>
+                        
+
+                  </div>
+            </div>
+            </section>
+            <img src="Video/hUzzduD.gif" length="65" width="65" align="right">
+    </body>
+</html>
